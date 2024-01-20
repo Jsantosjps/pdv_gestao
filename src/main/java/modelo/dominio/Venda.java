@@ -8,7 +8,7 @@ public class Venda {
     private BigDecimal totalDaVenda;
     private BigDecimal valorPago;
     private BigDecimal troco;
-    private BiDecimal desconto;
+    private BigDecimal desconto;
     private Usuario usuario;
     private LocalDateTime dataHoraCriacao;
     private LocalDateTime ultimaAtualizacao;
@@ -16,7 +16,7 @@ public class Venda {
     public Venda() {
     }
 
-    public Venda(java.lang.Long id, BigDecimal totalDaVenda, BigDecimal valorPago, BigDecimal troco, BiDecimal desconto, Usuario usuario, LocalDateTime dataHoraCriacao, LocalDateTime ultimaAtualizacao) {
+    public Venda(java.lang.Long id, BigDecimal totalDaVenda, BigDecimal valorPago, BigDecimal troco, BigDecimal desconto, Usuario usuario, LocalDateTime dataHoraCriacao, LocalDateTime ultimaAtualizacao) {
         this.id = id;
         this.totalDaVenda = totalDaVenda;
         this.valorPago = valorPago;
@@ -59,11 +59,11 @@ public class Venda {
         this.troco = troco;
     }
 
-    public BiDecimal getDesconto() {
+    public BigDecimal getDesconto() {
         return desconto;
     }
 
-    public void setDesconto(BiDecimal desconto) {
+    public void setDesconto(BigDecimal desconto) {
         this.desconto = desconto;
     }
 

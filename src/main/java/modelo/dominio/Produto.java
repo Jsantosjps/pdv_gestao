@@ -8,11 +8,11 @@ public class Produto {
     private Integer quantidade;
     private Categoria categoria;
     private Usuario usuario;
-    private localDateTime dataHoraCriacao;
+    private  LocalDateTime dataHoraCriacao;
     public Produto() {
     }
 
-    public Produto(java.lang.Long id, java.lang.String nome, BigDecimal preco, java.lang.Integer quantidade, Categoria categoria, Usuario usuario, localDateTime dataHoraCriacao) {
+    public Produto(java.lang.Long id, java.lang.String nome, BigDecimal preco, java.lang.Integer quantidade, Categoria categoria, Usuario usuario, LocalDateTime dataHoraCriacao) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
@@ -70,11 +70,11 @@ public class Produto {
         this.usuario = usuario;
     }
 
-    public localDateTime getDataHoraCriacao() {
+    public LocalDateTime getDataHoraCriacao() {
         return dataHoraCriacao;
     }
 
-    public void setDataHoraCriacao(localDateTime dataHoraCriacao) {
+    public void setDataHoraCriacao(LocalDateTime dataHoraCriacao) {
         this.dataHoraCriacao = dataHoraCriacao;
     }
 }
